@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+      content="newsletter sign-up form with success page challenge from Frontend Mentor">
+    <!-- displays site properly based on user's device -->
+    <link rel="stylesheet" href="style.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet">
+    <title>
+      Frontend Mentor | Newsletter sign-up form with success message
+    </title>
+  </head>
+  <body>
+    <div class="sign-up-form">
+      <div class="cover-photo">
+        <!-- Mobile image (default) -->
+        <img
+          src="assets/images/illustration-sign-up-mobile.svg"
+          id="mobile-image"
+          alt="mobile-cover-photo">
+        <!-- Desktop image (hidden by default) -->
+        <img
+          src="assets/images/illustration-sign-up-desktop.svg"
+          id="desktop-image"
+          alt="desktop-cover-photo">
+      </div>
+      <div
+        class="content">
+        <header>
+          <h1>Stay updated!</h1>
+        </header>
+        <div
+          class="caption">
+          <p>Join 60,000+ product managers receiving monthly updates on:</p>
+        </div>
+        <div
+          class="checklist">
+          <ul>
+            <li>Product discovery and building what matters</li>
+            <li>Measuring to ensure updates are a success</li>
+            <li>And much more!</li>
+          </ul>
+        </div>
+        <div
+          class="email-subscribe-container">
+          <form id="form" action="/" method="GET">
+            <div class="email">
+              <div class="email-labels">
+                <label for="email">Email address</label>
+                <label class="error" id="error"></label>
+              </div>
+              <input id="email" type="text" placeholder="email@company.com">
+              <div class="subscribe">
+                <a href="#" onclick="submitForm()" id="subscribeBtn">Subscribe
+                  to monthly newsletter</a>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script defer src="validation.js"></script>
+    <noscript>
+      <input type="submit" value="Subscribe to monthly newsletter">
+    </noscript>
+  </body>
+</html>
