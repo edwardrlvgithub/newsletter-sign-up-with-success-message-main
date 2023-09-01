@@ -1,1 +1,205 @@
-*{font-family:Roboto,sans-serif;font-weight:400;font-display:swap}body,html{height:100%;margin:0;display:flex;justify-content:center;align-items:center;background-color:#242741}.sign-up-form,.success-container{box-shadow:0 0 25px 1px #151727}.dismiss-msg,.subscribe{text-align:center}.dismiss-msg a,.email input,.subscribe a{border-radius:8px;box-sizing:border-box}.email-labels{display:flex;justify-content:space-between}.error{color:#ff512f}input{padding:1rem;height:3rem;width:100%;border:1px solid #cec9c9}.dismiss-msg a,.subscribe a{text-decoration:none;background-color:#242741;color:#fff;padding:1rem 2rem;display:block;margin-top:1.25rem;box-shadow:rgba(50,50,93,.25) 0 13px 27px -5px,rgba(0,0,0,.3) 0 8px 16px -8px;transition:background-image .1s,background-size,box-shadow .1s}.dismiss-msg a:hover,.subscribe a:hover{background-image:linear-gradient(to right,#ff5476 0,51%,#ff512f 100%);text-align:center;background-size:100% auto;color:#fff;box-shadow:0 10px 25px #fa9681}.confirm-caption b,.dismiss-msg,h1{font-weight:700;border-radius:8px}label{font-weight:700;margin:.5rem 0}h1{margin:0}h1,label,li,p{color:#242741}p{margin-top:1rem;line-height:1.75rem}.checklist li{margin-bottom:1rem;display:flex;align-items:center}.checklist li::before{content:url(assets/images/icon-list.svg);padding-right:1rem}.checklist ul{padding:0}@media (max-width:767px){.success-container{display:flex;align-items:center;min-height:100vh}.cover-photo{width:100%;overflow:hidden}.cover-photo img{width:100%;height:auto;object-fit:cover}#desktop-image{display:none}.sign-up-form,.success{display:flex;flex-direction:column;align-items:center;justify-content:space-evenly;overflow:hidden;padding:1.5rem;border-radius:30px;background-color:#fff;height:100%}.caption,.checklist,.dismiss-msg,.email-subscribe-container,.success{display:flex;width:100%;max-width:22rem;justify-content:center;overflow:hidden}.success{padding:2rem}.dismiss-msg{margin:20rem 0 2rem}.subscribe{margin-bottom:2rem;width:100%}.dismiss-msg a{width:100%;text-align:center;margin-top:auto;margin-bottom:1rem}.success-icon{align-self:flex-start;margin:3rem 0}}@media (min-width:768px){.sign-up-form,.success-container{display:flex;flex-direction:row-reverse;margin:auto;align-items:center;justify-content:center;border-radius:40px;background-color:#fff;max-width:fit-content}.sign-up-form{padding:2rem 1rem 2rem 3rem}.success{max-height:inherit;max-width:35vw;padding:4rem;justify-content:space-between;overflow-wrap:break-word}.success-icon{align-self:flex-start;margin:1rem 0}.content{padding-right:3rem}.cover-photo{height:100%;flex:1;overflow:hidden;position:relative;max-width:fit-content}.cover-photo img{max-height:100%;width:auto;object-fit:contain}#mobile-image{display:none}}@media (max-width:1280px){h1{font-size:3rem}}@media (min-width:1281px){h1{font-size:3.5rem;margin-bottom:0}.success{max-height:inherit;max-width:24vw;justify-content:space-between;overflow-wrap:break-word}}
+* {
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  font-display: swap;
+}
+body,
+html {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #242741;
+}
+.cover-photo img {
+  width: 100%;
+  max-height: 100%;
+  width: auto;
+  object-fit: contain;
+}
+.sign-up-form,
+.success-container {
+  box-shadow: 0 0 25px 1px #151727;
+}
+.dismiss-msg,
+.subscribe {
+  text-align: center;
+}
+.dismiss-msg a,
+.email input,
+.subscribe a {
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+.email-labels {
+  display: flex;
+  justify-content: space-between;
+}
+.error {
+  color: #ff512f;
+}
+input {
+  padding: 1rem;
+  height: 3rem;
+  width: 100%;
+  border: 1px solid #cec9c9;
+}
+.dismiss-msg a,
+.subscribe a {
+  text-decoration: none;
+  background-color: #242741;
+  color: #fff;
+  padding: 1rem 2rem;
+  display: block;
+  margin-top: 1.25rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0 8px 16px -8px;
+  transition: background-image 0.1s, background-size, box-shadow 0.1s;
+}
+.dismiss-msg a:hover,
+.subscribe a:hover {
+  background-image: linear-gradient(to right, #ff5476 0, 51%, #ff512f 100%);
+  text-align: center;
+  background-size: 100% auto;
+  color: #fff;
+  box-shadow: 0 10px 25px #fa9681;
+}
+.confirm-caption b,
+.dismiss-msg,
+h1 {
+  font-weight: 700;
+  border-radius: 8px;
+}
+label {
+  font-weight: 700;
+  margin: 0.5rem 0;
+}
+h1 {
+  margin: 0;
+}
+h1,
+label,
+li,
+p {
+  color: #242741;
+}
+p {
+  margin-top: 1rem;
+  line-height: 1.75rem;
+}
+.checklist li {
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+}
+.checklist li::before {
+  content: url(assets/images/icon-list.svg);
+  padding-right: 1rem;
+}
+.checklist ul {
+  padding: 0;
+}
+@media (max-width: 767px) {
+  .success-container {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+  }
+  #desktop-image {
+    display: none;
+  }
+  .sign-up-form,
+  .success {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    overflow: hidden;
+    padding: 1.5rem;
+    border-radius: 30px;
+    background-color: #fff;
+    height: 100%;
+  }
+  .caption,
+  .checklist,
+  .dismiss-msg,
+  .email-subscribe-container,
+  .success {
+    display: flex;
+    width: 100%;
+    max-width: 22rem;
+    justify-content: center;
+    overflow: hidden;
+  }
+  .success {
+    padding: 2rem;
+  }
+  .dismiss-msg {
+    margin: 20rem 0 2rem;
+  }
+  .subscribe {
+    margin-bottom: 2rem;
+    width: 100%;
+  }
+  .dismiss-msg a {
+    width: 100%;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: 1rem;
+  }
+  .success-icon {
+    align-self: flex-start;
+    margin: 3rem 0;
+  }
+}
+@media (min-width: 768px) {
+  .sign-up-form,
+  .success-container {
+    display: flex;
+    flex-direction: row-reverse;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    border-radius: 40px;
+    background-color: #fff;
+    max-width: fit-content;
+  }
+  .sign-up-form {
+    padding: 2rem 1rem 2rem 3rem;
+  }
+  .success {
+    max-height: inherit;
+    max-width: 35vw;
+    padding: 4rem;
+    justify-content: space-between;
+    overflow-wrap: break-word;
+  }
+  .success-icon {
+    align-self: flex-start;
+    margin: 1rem 0;
+  }
+  .content {
+    padding-right: 3rem;
+  }
+  #mobile-image {
+    display: none;
+  }
+}
+@media (max-width: 1280px) {
+  h1 {
+    font-size: 3rem;
+  }
+}
+@media (min-width: 1281px) {
+  h1 {
+    font-size: 3.5rem;
+    margin-bottom: 0;
+  }
+  .success {
+    max-height: inherit;
+    max-width: 24vw;
+    justify-content: space-between;
+    overflow-wrap: break-word;
+  }
+}
